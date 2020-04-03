@@ -175,8 +175,8 @@ function Statement(ox,oy,oa,x,y,w,h,a,s,contents,img,ref){
         push();
         imageMode(CENTER);
         // tint(255,fade);
-        image(img,0,0,sn*0.8,sn*0.5);
-        translate(s*0.25,s*0.35);
+        image(img,0,0,sn*0.7,sn*0.7);
+        translate(s*0,s*0.475);
         scale(sn/s);
         fill(0,0,100);
         noStroke();
@@ -275,6 +275,11 @@ function Statement(ox,oy,oa,x,y,w,h,a,s,contents,img,ref){
       }
       
       ellipse(x,y,d);
+      fill(0,0,100);
+      noStroke();
+      textSize(d*0.5);
+      textAlign(CENTER,CENTER);
+      text(id+1,x,y);
     }
   }
 }

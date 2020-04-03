@@ -170,16 +170,9 @@ function Path(id,x,y,d,s,sno,design,stops,stopIDs,stopLabels, label){
     beginShape();
     verts.forEach(function(v){
       vertex(v.x, v.y);
-      // push();
-      // stroke(0,0,100);
-      // strokeWeight(1);
-      // translate(v.x,v.y);
-      // rotate(v.a);
-      // line(0,0,0,50);
-      // pop();
     });
-    stroke(cHue,40,40,1);
-    strokeWeight(rad*2);
+    stroke(cHue,60,60,1);
+    strokeWeight(rad*2.5);
     noFill();
     endShape();
     push();
@@ -188,9 +181,9 @@ function Path(id,x,y,d,s,sno,design,stops,stopIDs,stopLabels, label){
     fill(cHue,60,70,0.4);
     strokeWeight(rad*0.25);
     noStroke();
-    textSize(rad*5);
+    textSize(rad*8);
     textAlign(CENTER, CENTER);
-    text(label,0,0);
+    text(label,0,-rad*15);
     pop();
     
     pop();
@@ -205,7 +198,7 @@ function Path(id,x,y,d,s,sno,design,stops,stopIDs,stopLabels, label){
     
     translate(-offset.x, -offset.y);
     fill(0,100,100);
-    ellipse(0,0,rad*4);
+    ellipse(0,0,rad*6);
     var path=this;
     stops.forEach(function(stop,i){
       var thisStop=nextStopIndex==i && isStopped;
@@ -216,7 +209,7 @@ function Path(id,x,y,d,s,sno,design,stops,stopIDs,stopLabels, label){
       translate(p.x, p.y);
       noStroke();
       fill(cHue,isCurrentPath?60:0,60,1);
-      ellipse(0,0,rad*4);
+      ellipse(0,0,rad*6);
       rotate(a);
       translate(0,-rad*8);
       rotate(PI/2);

@@ -2,8 +2,8 @@ var pathDesigns=[
     {
       dir:2,
       design:["A","A","L","A","R","A","A","L","A","A"],
-      stops: [0.5,0.75,0.99],
-      stopLabels: ["Definition","Significance","Sectors"],
+      stops: [0.225,0.5,0.75,0.99],
+      stopLabels: ["How to Use","Definition","Significance","Sectors"],
       label:"Creative Industries"
     }, 
     {
@@ -23,23 +23,30 @@ var pathDesigns=[
     , {
       dir:0,
       design:["A","A","A","R","A","R","A","R","A","A","A","L","R","A","R","L","A"],
-      stops: [0.35,0.7,0.99],
+      stops: [0.325,0.65,0.99],
       stopLabels: ["Industry","Skills + Talent","Profession"],//,"Covid-19"],
       label:"Obstacles"
     }
     , {
       dir:1,
       design:["A","R","A","A","L","A","R","L","L","A","L","R","A","A"],
-      stops: [0.2,0.4,0.65,0.95],
+      stops: [0.28,0.4,0.65,0.95],
       stopLabels: ["Leadership","Talent","Clusters","Support"],
       label:"Opportunities"
     },
     {
       dir:2,
-      design:["A","R","A","L","A","A","L","A","A","L","R","A","A","L","L","A","R"],
-      stops: [0.25,0.5,0.75,0.99],
-      stopLabels: ["Values","Business","Projects","Community"],
+      design:["A","R","A","L","A","A","L","A","A","L","R","A","A","L","L","A","L"],
+      stops: [0.25,0.5,0.75,0.97],
+      stopLabels: ["Business","Values","Projects","Future"],
       label:"Case Study:Rocketmakers"
+    }, 
+    {
+      dir:2,
+      design:["A","A","A","A","A","A"],
+      stops: [0.9],
+      stopLabels: ["End"],
+      label:""
     }, 
   ];
   
@@ -47,15 +54,21 @@ var sources=["","[WEP]","[BAZ]","[WEC]","[TN]","[RP]","[RG]","[DCMS1]","[DCMS2]"
   
 var containerContents=[
     [
+      //Creative Industries, Significance
+      {t:"Follow;the path;through;SouthWest;Creative;Industries",i:null,r:0},
+      {t:"Each;Stop;has one or;more;facts",i:null,r:0},
+      {t:"Click;fact buttons;below;to reveal;each one",i:null,r:0},
+      {t:"Click;next;to move to;the next;stop", i:null,r:0}
+    ],[
       //Creative Industries, Definition
-      {t:'"those industries;which have their origin;in individual;creativity, skill;and talent;and which have the;potential;for wealth and;job creation;through the generation;and exploitation of;intellectual;property"',i:null,r:2},
+      {t:'"creativity, skill;and talent;which have the;potential;for wealth and;job creation;through the generation;and exploitation of;intellectual;property"',i:null,r:2},
     ],
     [
       //Creative Industries, Significance
       {t:"Creative;jobs are at;LOW;risk of;automation",i:null,r:2},
       {t:"Important;enabler to;innovation;and growth;in other;industries",i:null,r:2},
       {t:"Help to;enrish;culture;and quality of;life",i:null,r:2},
-      {t:"5.8%;UK GVA in;2018", i:null,r:8}
+      {t:"5.8%;of UK GVA in;2018", i:null,r:8}
     ],
     [
       //Creative Industries, Sectors
@@ -70,8 +83,8 @@ var containerContents=[
       {t:"UK;No.6;in global;top ten;exporters of;creative goods",i:null,r:11},
       {t:"", i:0,r:11},
       {t:"", i:1,r:11},
-      {t:"It's Competitive;Many other;countries;especially;emerging economies;are growing their;creative;economies",i:null,r:2},
-      {t:"Businesses;talent and;markets are;highly;mobile",i:null,r:2},
+      {t:"Many other;countries;especially;emerging economies;are growing their;creative;economies",i:null,r:2},
+      {t:"Businesses,;talent and;markets are;highly;mobile",i:null,r:2},
       {t:"US and Asian;investment in;creative Industries;is targeting UK;ahead of other;European;countries",i:null,r:4},
     ],[
       //Context: UK
@@ -85,8 +98,8 @@ var containerContents=[
     ],[
       //South West: region
       {t:"Creative Digital;and Immersive;identified as;key areas for;future;economic;growth;by West of;England;Combined Authority",i:null,r:3},
-      {t:"Large;local;talent;pool;+;fabulous;R&D;facilities",i:null,r:3},
-      {t:"Creative hubs;are vital;clustered;around;key businesses",i:null,r:3},
+      {t:"Large;local;talent;pool;and fabulous;technology;R&D;facilities",i:null,r:3},
+      {t:"Creative hubs;are vital,;clustered;around;key local;businesses",i:null,r:3},
       {t:"Attractive;area to live;and a good;quality of life",i:null,r:3},
       {t:"Over;5000;students;enrolled in;creative industries;degree and PG;courses",i:null,r:3},
       {t:"Higher;than average;demand for;Creative digital;jobs", i:null,r:3}
@@ -104,9 +117,9 @@ var containerContents=[
     ],
     [
       //South West: Beyond
-      {t:"Exter",i:null},
-      {t:"Plymouth",i:null},
-      {t:"Falmouth;Redruth;Truro",i:null}
+      {t:"Further;South West;there are;opportunities;and talent",i:null},
+      {t:"Devon:;Exter;supported;by Kaleider;& Plymouth;with its;university",i:null},
+      {t:"Cornwall:;Strong creative;tradition,;Falmouth;University,;Kronji;in Redruth",i:null}
     ],
     [
       //Obstacles: Industry
@@ -121,7 +134,7 @@ var containerContents=[
       {t:"Furth &;Higher;education;do not consistently;deliver;work-ready;talent",i:null,r:1},
       {t:"Creative;Occupations;perceived as;risky;and unattractive;as professions",i:null,r:2},
       {t:"A joined-up;talent;pipeline;is lacking",i:null,r:2},
-      {t:"Opprtunities;are more;accessible;to most;advantaged;because of;networks;unpaid entry points",i:null,r:13},
+      {t:"Opprtunities;are more;accessible;to most;advantaged;because of;networks and;unpaid entry points",i:null,r:13},
       {t:"Lack of;diversity;across;gender;ethnicity;disability;and age",i:null,r:7}
     ],[
       //Obstacles: Profession
@@ -137,12 +150,12 @@ var containerContents=[
     // ],
     [
       //Opportunities: Leadership
-      {t:"Develop;and train;Board level;business;and strategic;skill",i:null,r:3},
+      {t:"Develop;and train;Board level,;business;and strategic;skill",i:null,r:3},
       {t:"Micro and SME's;need better;legal;employment;and IP;knowledge;and skills",i:null,r:2},
       {t:"Medium and larger;business;needs to;partner with;universities;for R&D",i:null,r:2},
       {t:"We need to;develop;great;creative;leaders",i:null,r:2},
       {t:"Incentivise;investment in;innovation;productivity;and R&D",i:null,r:2},
-      {t:"Acceleration;funds for;screen,games & AR/VR;work",i:null,r:2},
+      {t:"Acceleration;funds for;screen;games & AR/VR;succeed",i:null,r:2},
       {t:"Increase;businesses';ambition to;export;their services",i:null,r:4},
       {t:"R&D;tax reliefs;should be;extended to;creative;endeavours",i:null,r:2},
       {t:"Growth;should be;clean &;inclusive",i:null,r:3}
@@ -157,14 +170,14 @@ var containerContents=[
     ],[
       //Opportunities: Clusters
       {t:"Creative;clusters;are an important;tool for;nurturing;success",i:null,r:2},
-      {t:"Build around,existing;success and;excellence",i:null,r:2},
+      {t:"Build around;existing;success and;excellence",i:null,r:2},
       {t:"Clusters:;- improve productivity;- build networks;-respond locally;- pool resources;-highly cost effective",i:null,r:3},
       {t:"Clusters:;translate;creative;success into;commercial;success",i:null,r:3},
     ],[
       //Opportunities: Support
-      {t:"South West;Research & Support:; SWCTN - SouthWest Creative;  Technology Network,; BBCRD - Bristol and Bath;  Creative R&D; CCCI - Centre;  for Creative &;  Cultural;  Industries",i:null, r:5},
+      {t:"South West;Research & Support:; SWCTN;- SouthWest Creative;  Technology Network,; BBCRD;- Bristol and Bath;  Creative R&D; CCCI - Centre;  for Creative &;  Cultural;  Industries",i:null, r:5},
       {t:"South West;Creative Hubs:; Watershed &;  Pervasic Media Studio; KWMC - Knowle West;  Media Centre; Studio@;  Palace Yard Mews",i:null, r:0},
-      {t:"Further South West:; Kaleider in Exeter; Kronji in Redruth",i:null},
+      {t:"Further;South West:; Kaleider;in Exeter,; Kronji;in Redruth",i:null},
     ],
     [
       //Rocketmakers: Business
@@ -193,7 +206,11 @@ var containerContents=[
     ],[
       //Rocketmakers: Future Focussed
       {t:"Active;support for local;Creative Industries bodies;SWCTN &;BBCRD",i:null,r:6},
-      {t:"Embrace;opportunities to;deploy new and;emerging;capbilities;including;AR, VR, mixed reality;and Haptics",i:null,r:6},
+      {t:"Embrace;opportunities to;deploy new and;emerging;capbilities;including;AR/VR;and Haptics",i:null,r:6},
       {t:"Invest time;and skills;into high-growth;potential;new ventures",i:null,r:6}
+    ],[
+      //End
+      {t:"Click;Restart;to begin;again",i:null,r:0},
     ]
+    
   ]

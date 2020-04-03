@@ -3,7 +3,7 @@ function UISkin(x,y,r){
   
   // buttons.push(new Button(x-width*0.1,y+r,width*0.03,width*0.03,"next",uiNext));
   buttons.push(new Button(x-width*0,y+r,width*0.1,width*0.03,"next",uiNext));
-  buttons.push(new Button(x+width*0,y+r+width*0.03,width*0.1,width*0.03,"restart",uiRestart));
+  buttons.push(new Button(x+width*0,y+r+width*0.04,width*0.1,width*0.03,"restart",uiRestart));
   
   this.run=function(){
     buttons.forEach(function(b){

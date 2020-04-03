@@ -33,10 +33,10 @@ var thickness=0.005;
 var pathOrigin={x:100,y:100};
 
 function preload(){
-  images.push(loadImage("assets/unGlobalTop10.png"));
-  images.push(loadImage("assets/unExportProducts.png"));
-  images.push(loadImage("assets/ukExport.png"));
-  images.push(loadImage("assets/dcmsGrowth1.png"));
+  images.push(loadImage("assets/un1.png"));
+  images.push(loadImage("assets/un2.png"));
+  images.push(loadImage("assets/un3.png"));
+  images.push(loadImage("assets/DCMS1.png"));
   images.push(loadImage("assets/rocketmakers1.png"));
   images.push(loadImage("assets/rocketmakers2.png"));
 }
@@ -47,6 +47,8 @@ function setup() {
   numBlobs=pathDesigns.length;
   var cnv=createCanvas(windowWidth, windowHeight);
   var myDiv=select('#canvas');
+  var refDiv=select('#refs');
+  refDiv.hide();
   cnv.parent(myDiv);
   pathOrigin={x:width*0.3, y:height*0.5};
   colorMode(HSB);
@@ -74,6 +76,7 @@ function setup() {
   containerContents.forEach(function(cc){
     containers.push(new Container(nextContainerID++,width*0.7,height*0.5,width*0.15,cc));
   });
+  refDiv.show();
   // container=new Container(nextContainerID++,width*0.7,height*0.5,width*0.15,contents);
 }
 
@@ -179,7 +182,8 @@ function draw() {
     push();
     translate(width/2,height*0.25);
     fill(status.cHue,80,80);
-    noStroke();
+    stroke(0,0,50);
+    strokeWeight(width*0.002)
     // ellipse(0,0,inR*2);
     textFont("Bitter");
     textSize(width*0.025);
@@ -197,6 +201,12 @@ function draw() {
   textSize(width*0.05);
   textAlign(CENTER);
   text("SouthWest Creative Industries in 2020",width*0.5,height*0.15);
+  translate(width*0.05,height*0.9);
+  textSize(width*0.01);
+  textAlign(LEFT,CENTER);
+  text("By Dave Webb for Bath Spa University 2020",0,0);
+  textSize(width*0.02);
+  text("Scroll down for references",0,height*0.03);
 }
 
 
