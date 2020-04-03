@@ -33,9 +33,9 @@ var thickness=0.005;
 var pathOrigin={x:100,y:100};
 
 function preload(){
-  images.push(loadImage("assets/un1.png"));
-  images.push(loadImage("assets/un2.png"));
-  images.push(loadImage("assets/un3.png"));
+  images.push(loadImage("assets/UN1.png"));
+  images.push(loadImage("assets/UN2.png"));
+  images.push(loadImage("assets/UN3.png"));
   images.push(loadImage("assets/DCMS1.png"));
   images.push(loadImage("assets/rocketmakers1.png"));
   images.push(loadImage("assets/rocketmakers2.png"));
