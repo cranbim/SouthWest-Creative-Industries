@@ -2,7 +2,7 @@ var pathDesigns=[
     {
       dir:2,
       design:["A","A","L","A","R","A","A","L","A","A"],
-      stops: [0.225,0.5,0.75,0.99],
+      stops: [0.2,0.5,0.75,0.99],
       stopLabels: ["How to Use","Definition","Significance","Sectors"],
       label:"Creative Industries"
     }, 
@@ -43,8 +43,8 @@ var pathDesigns=[
     }, 
     {
       dir:2,
-      design:["A","A","A","A","A","A"],
-      stops: [0.9],
+      design:["A","A","A","A"],
+      stops: [0.95],
       stopLabels: ["End"],
       label:""
     }, 

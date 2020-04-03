@@ -81,7 +81,7 @@ function Statement(ox,oy,oa,x,y,w,h,a,s,contents,img,ref){
   // var w=s*0.5;
   // var h=s*0.8;
   var sn=0.1*s;
-  var grow=1.05;
+  var grow=1.08;
   var words=contents.split(';');
   var tw=[];
   var ts=[];
